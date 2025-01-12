@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css">
+    <title>Learn JavaScript</title>
+    
+    <script>
+        /*
+            Code One Doesn't Run Because HTML Page Debug
+            Line by Line, so When Debug Script Element First
+            the body (h1) It Doesn't Exist.
+        */
+        // Code One
+        document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+        // Code Two
+        window.onload = function () {
+            document.getElementById("el").style.color = "red";
+        };
+    </script>
+</head>
+
+<body>
+    <h1 id="el">Page Title</h1>
+    <script>
+        // Code Three
+        document.getElementById("el").style.color = "red";
+    </script>
+</body>
+
+</html>
