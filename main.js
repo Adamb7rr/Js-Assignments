@@ -38,12 +38,28 @@
 // console.log(cost + '$')
 // console.log(pay + '$')
 
-let toaster = 18.5;
-let Tshirt = 7.5 * 2;
-let tax1 = 0.1;
-let tax2 = 0.2;
-let cost = toaster + Tshirt;
+// let toaster = 18.5;
+// let Tshirt = 7.5 * 2;
+// let tax1 = 0.1;
+// let tax2 = 0.2;
+// let cost = toaster + Tshirt;
 
-console.log(cost + '$')
-console.log(cost * tax1 + '$')
-console.log(cost * tax2 + '$')
+// console.log(cost + '$')
+// console.log(cost * tax1 + '$')
+// console.log(cost * tax2 + '$')
+
+let toaster = 1899;
+let basketball = 2095;
+let Tshirt = 799;
+let shipping = 499;
+let tax = 0.1;
+
+let cost = (toaster + basketball + Tshirt) / 100;
+let costWithShipping = (toaster + basketball + Tshirt + shipping) / 100;
+let costWithTax = Math.round((toaster + basketball + Tshirt + shipping) * tax) / 100;
+let Total = costWithShipping + costWithTax;
+
+console.log(cost + '$');
+console.log(costWithShipping + '$');
+console.log(costWithTax + '$');
+console.log(Total + '$');
