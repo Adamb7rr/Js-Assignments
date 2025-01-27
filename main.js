@@ -28,3 +28,18 @@
 // // challenges 3
 
 // document.body.innerHTML = '';
+
+// let soup = 10;
+// let burgers = 8 * 3;
+// let iceCream = 5;
+// let cost = soup + burgers + iceCream;
+// let pay = cost / 3
+
+// console.log(cost + '$')
+// console.log(pay + '$')
+
+// let toaster = 18.5;
+// let Tshirt = 7.5 * 2;
+// let cost = toaster + Tshirt;
+
+// console.log(cost + '$')
