@@ -38,8 +38,10 @@
 // console.log(cost + '$')
 // console.log(pay + '$')
 
-// let toaster = 18.5;
-// let Tshirt = 7.5 * 2;
-// let cost = toaster + Tshirt;
+let toaster = 18.5;
+let Tshirt = 7.5 * 2;
+let tax = 0.1;
+let cost = toaster + Tshirt;
 
-// console.log(cost + '$')
+console.log(cost + '$')
+console.log(cost * tax + '$')
