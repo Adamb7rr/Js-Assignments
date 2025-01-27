@@ -40,8 +40,10 @@
 
 let toaster = 18.5;
 let Tshirt = 7.5 * 2;
-let tax = 0.1;
+let tax1 = 0.1;
+let tax2 = 0.2;
 let cost = toaster + Tshirt;
 
 console.log(cost + '$')
-console.log(cost * tax + '$')
+console.log(cost * tax1 + '$')
+console.log(cost * tax2 + '$')
