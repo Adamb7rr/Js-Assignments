@@ -66,3 +66,8 @@
 
 // console.log(Math.floor(2.2))
 // console.log(Math.ceil(2.2))
+
+let f = (-5 * 9 / 5) + 32;
+let c = (86 - 32) * 5 / 9;
+
+console.log(f);
