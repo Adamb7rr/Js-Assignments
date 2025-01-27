@@ -72,14 +72,21 @@
 
 // console.log(f);
 
-console.log('My Name Is :')
-console.log('Adam')
-console.log("My Name Is:" + " Adam")
+// console.log('My Name Is :')
+// console.log('Adam')
+// console.log("My Name Is:" + " Adam")
 
-let coffee = 5;
-let bagel = 3;
-let total = coffee + bagel;
+// let coffee = 5;
+// let bagel = 3;
+// let total = coffee + bagel;
+
+// console.log("Total Cost: $" + total);
+// console.log(`Total Cost: $${total}`);
+// alert(`Total Cost: $${total}`);
+let coffee = 599;
+let bagel = 295;
+let total = (coffee + bagel) / 100;
 
 console.log("Total Cost: $" + total);
 console.log(`Total Cost: $${total}`);
-alert(`Total Cost: $${total}`);
+alert(`Total Cost: $${total}\nThank you, Come Again!`);
