@@ -22,7 +22,7 @@
         Buy now
     </button> -->
 
-    <div class="cart">
+    <!-- <div class="cart">
         <h2>Adult Plain Cotton T-shirt</h2>
         <p>Price: $7.99</p>
         <button class="yellow-btn" onclick="
@@ -36,7 +36,30 @@
         ">
             Buy now
         </button>
+    </div> -->
+
+    <div class="card">
+        <h2>Cart Quantity</h2>
+        <button onclick="
+            console.log(`Cart quantit: ${res}`)
+        ">Show Quantity</button>
+        <button onclick="
+            console.log(`Cart quantit: ${res += 1}`)
+        ">Add to Cart</button>
+        <button onclick="
+            console.log(`Cart quantit: ${res += 2}`)
+        ">+2</button>
+        <button onclick="
+            console.log(`Cart quantit: ${res += 3}`)
+        ">+3</button>
+        <button onclick="
+            res = 0;
+            console.log(`Cart Was Reset.`);
+        ">Reset Cart</button>
     </div>
     <script src="./main.js"></script>
+    <script>
+        let res = 0;
+    </script>
 </body>
 </html>
