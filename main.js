@@ -83,10 +83,21 @@
 // console.log("Total Cost: $" + total);
 // console.log(`Total Cost: $${total}`);
 // alert(`Total Cost: $${total}`);
-let coffee = 599;
-let bagel = 295;
-let total = (coffee + bagel) / 100;
+// let coffee = 599;
+// let bagel = 295;
+// let total = (coffee + bagel) / 100;
 
-console.log("Total Cost: $" + total);
-console.log(`Total Cost: $${total}`);
-alert(`Total Cost: $${total}\nThank you, Come Again!`);
+// console.log("Total Cost: $" + total);
+// console.log(`Total Cost: $${total}`);
+// alert(`Total Cost: $${total}\nThank you, Come Again!`);
+
+let basketball = 2095 * 2;
+let Tshirt = 799 * 2;
+let shipping = (499 * 2) / 100;
+
+let total = (basketball + Tshirt) / 100;
+let tax = ((basketball + Tshirt) * 0.1) / 100;
+
+console.log("items (" + (2 + 2) + "): \t $" + total + "\n"
+    + "Shipping & handling:" + "\t $" + (2 * 2095 + 2 * 799 + 499 + 499) / 100 + "\n\n"
+    + "Total before tax:" + "\t $" + Math.round((2 * 2095 + 2 * 799 + 499 + 499) * 0.1) / 100);
