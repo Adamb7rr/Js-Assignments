@@ -105,6 +105,7 @@
 // console.log("Welcome!")
 
 var name = 'Adam';
+var res = 0;
 
 console.log(`My Name Is: ${name}`);
 
