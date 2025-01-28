@@ -1,5 +1,37 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #15616d;
+}
+div {
+    background-color: lightgray;
+    max-width: fit-content;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
 button {
-    padding: 5px 10px;
+    padding: 15px 20px;
     cursor: pointer;
-    background-color: lightblue;
+    background-color: #15616d;
+    color: #FFF;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+}
+button:hover {
+    transform: scale(1.1);
+    color: #333;
+    background-color: #588157;
+}
+.custom {
+    background-color: #001524;
+}
+.custom2 {
+    background-color: #588157;
+    border-radius: 10px;
 }
