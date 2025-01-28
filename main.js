@@ -104,5 +104,18 @@
 
 // console.log("Welcome!")
 
+var name = 'Adam';
 
+console.log(`My Name Is: ${name}`);
 
+let coffee = 5
+let bagels = 3 * 2
+let soup = 9
+
+let cost = coffee + bagels + soup
+let tax = cost * 0.1
+let costWithTax = cost + tax
+
+console.log(cost)
+console.log(costWithTax)
+console.log(`Tax (10%): $${tax}`)
