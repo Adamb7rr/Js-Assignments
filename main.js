@@ -102,3 +102,4 @@
 //     + "Shipping & handling:" + "\t $" + (2 * 2095 + 2 * 799 + 499 + 499) / 100 + "\n\n"
 //     + "Total before tax:" + "\t $" + Math.round((2 * 2095 + 2 * 799 + 499 + 499) * 0.1) / 100);
 
+console.log("Welcome!")
