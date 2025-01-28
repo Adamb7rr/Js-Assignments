@@ -1,14 +1,11 @@
-/* * {
-    box-sizing: border-box;
-    margin: 0px;
+button {
+    padding: 5px 10px;
+    
+    background-color: lightblue;
 }
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-} */
+.yellow-btn {
+    background: yellow;
+}
+.orange-btn {
+    background: orange;
+}
