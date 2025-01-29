@@ -1,11 +1,12 @@
 body {
     display: flex;
     height: 100vh;
+    margin: 0;
     justify-content: center;
     align-items: center;
     background-color: #15616d;
 }
-div {
+/* div {
     background-color: lightgray;
     max-width: fit-content;
     padding: 50px;
@@ -34,4 +35,4 @@ button:hover {
 .custom2 {
     background-color: #588157;
     border-radius: 10px;
-}
+} */

@@ -121,4 +121,21 @@
 // console.log(costWithTax)
 // console.log(`Tax (10%): $${tax}`)
 
-let calc = ''
+// let iphone = 9999;
+// let amount = (iphone * 2) / 100
+// let tax = 0.08
+// let amountWithTax = amount + (amount * tax)
+
+// console.log("Cost: $" + String(amount))
+// console.log("Cost With Tax: $" + amountWithTax.toFixed(2))
+// console.log("99.99" === 99.99)
+
+
+// let iphone = 9999;
+// let amount = (iphone * 2) / 100
+// let tax = 0.08
+// let amountWithTax = amount
+
+// console.log("Cost: $" + String(amount))
+// console.log("Cost With Tax: $" + String(amountWithTax))
+// console.log("99.99" === 99.99)
