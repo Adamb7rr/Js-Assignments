@@ -176,10 +176,11 @@
 //     console.log(`Good Night! ${name}`)
 // }
 
-let age = 22
+let age = 6
+const isHoliday = false
 
 if (age >= 1 && age <= 6 || age >= 65) {
-    console.log("Discount")
+    isHoliday ? console.log("No Discount") : console.log("Discount")
 } else {
     console.log("No Discount")
 }
