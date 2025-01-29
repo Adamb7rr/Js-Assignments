@@ -176,11 +176,27 @@
 //     console.log(`Good Night! ${name}`)
 // }
 
-let age = 6
-const isHoliday = false
+// let age = 6
+// const isHoliday = false
 
-if (age >= 1 && age <= 6 || age >= 65) {
-    isHoliday ? console.log("No Discount") : console.log("Discount")
+// if (age >= 1 && age <= 6 || age >= 65) {
+//     isHoliday ? console.log("No Discount") : console.log("Discount")
+// } else {
+//     console.log("No Discount")
+// }
+
+let randomNum = Math.random();
+let res = '';
+let guess = 'tails';
+
+if (randomNum < 0.5) {
+    // console.log("heads")
+    // console.log(randomNum)
+    res = 'heads'
 } else {
-    console.log("No Discount")
+    // console.log("tails")
+    // console.log(randomNum)
+    res = 'tails'
 }
+
+guess === res ? console.log("You Win") : console.log("You Lose")
