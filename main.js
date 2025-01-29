@@ -140,8 +140,26 @@
 // console.log("Cost With Tax: $" + String(amountWithTax))
 // console.log("99.99" === 99.99)
 
-if (10 >= 18) {
-    console.log('You Can Drive')
-} else {
-    console.log('You Can\'t Drive')
-}
+// if ( >= 18) {
+//     console.log('You Can Drive')
+// } else {
+//     console.log('You Can\'t Drive')
+// }
+
+// let randomNumber = Math.random();
+
+// let comuterMove = '';
+// let myMove = '';
+
+// if (randomNumber >= 0 && randomNumber < 1 / 3) {
+//     comuterMove = 'Rock';
+// } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+//     comuterMove = 'Paper';
+// } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+//     comuterMove = 'Scissors';
+// }
+
+// let randomNumber = Math.random();
+
+// let comuterMove = '';
+// let myMove = '';

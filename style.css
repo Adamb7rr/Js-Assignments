@@ -15,11 +15,18 @@ body {
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease;
 }
+
+custom {
+    background-color: #001524;
+}
+.custom2 {
+    background-color: #588157;
+    border-radius: 10px;
+} */
 button {
     padding: 15px 20px;
     cursor: pointer;
-    background-color: #15616d;
-    color: #FFF;
+    margin-right: 20px;
     outline: none;
     border: none;
     border-radius: 50%;
@@ -27,12 +34,5 @@ button {
 button:hover {
     transform: scale(1.1);
     color: #333;
-    background-color: #588157;
+    
 }
-.custom {
-    background-color: #001524;
-}
-.custom2 {
-    background-color: #588157;
-    border-radius: 10px;
-} */
