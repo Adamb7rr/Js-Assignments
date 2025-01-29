@@ -139,3 +139,9 @@
 // console.log("Cost: $" + String(amount))
 // console.log("Cost With Tax: $" + String(amountWithTax))
 // console.log("99.99" === 99.99)
+
+if (10 >= 18) {
+    console.log('You Can Drive')
+} else {
+    console.log('You Can\'t Drive')
+}
