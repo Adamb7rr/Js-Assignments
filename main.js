@@ -185,18 +185,28 @@
 //     console.log("No Discount")
 // }
 
-let randomNum = Math.random();
-let res = '';
-let guess = 'tails';
+// let randomNum = Math.random();
+// let res = '';
+// let guess = 'tails';
 
-if (randomNum < 0.5) {
-    // console.log("heads")
-    // console.log(randomNum)
-    res = 'heads'
-} else {
-    // console.log("tails")
-    // console.log(randomNum)
-    res = 'tails'
-}
+// if (randomNum < 0.5) {
+//     // console.log("heads")
+//     // console.log(randomNum)
+//     res = 'heads'
+// } else {
+//     // console.log("tails")
+//     // console.log(randomNum)
+//     res = 'tails'
+// }
 
-guess === res ? console.log("You Win") : console.log("You Lose")
+// guess === res ? console.log("You Win") : console.log("You Lose")
+
+let res = 0;
+
+// res >= 10 ? alert('Cart is full.') : console.log(res)
+
+// if (res >= 10) {
+//     alert("Cart is full.")
+// } else {
+//     console.log(res)
+// }

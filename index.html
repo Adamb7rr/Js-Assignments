@@ -225,6 +225,46 @@
             }
         ">Scissors</button>
     </div> -->
+
+    <div class="card">
+        <h2>Cart Quantity</h2>
+        <button onclick="
+            console.log(`Cart quantit: ${res}`)
+        ">Show Quantity</button>
+        <button onclick="
+            res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res = res + 1}`)
+        ">Add to Cart</button>
+        <button onclick="
+            res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res += 2}`)
+        ">+2</button>
+        <button onclick="
+            
+            res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res += 3}`)
+        ">+3</button>
+        <button onclick="
+            
+            res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res += 4}`)
+        ">+4</button>
+        <button onclick="
+            
+            res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res += 5}`)
+        ">+5</button>
+        <button onclick="
+            res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res -= 1}`)
+        ">-1</button>
+        <button onclick="
+            
+            res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res -= 2}`)
+        ">-2</button>
+        <button onclick="
+            
+            res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res -= 3}`)
+        ">-3</button>
+        <button onclick="
+            res = 0;
+            console.log(`Cart Was Reset.`);
+        ">Reset Cart</button>
+    </div>
     <script src="./main.js"></script>
     <script>
         

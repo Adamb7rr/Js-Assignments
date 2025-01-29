@@ -23,16 +23,14 @@ custom {
     background-color: #588157;
     border-radius: 10px;
 } */
-/* button {
+button {
     padding: 15px 20px;
     cursor: pointer;
     margin-right: 20px;
     outline: none;
     border: none;
-    border-radius: 50%;
+    border-radius: 25px;
 }
 button:hover {
     transform: scale(1.1);
-    color: #333;
-    
-} */
+}
