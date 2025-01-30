@@ -326,33 +326,48 @@
 // convertLength(5, 'km', 'ft')
 // convertLength(5, 'lbs', 'lbs')
 
-let calculation = '';
+// let calculation = '';
 
-function updateCalculator (num) {
-    if (num === '+') {
-        calculation += '+';
-        console.log(calculation);
-    } else if (num === '-') {
-        calculation += '-';
-        console.log(calculation);
-    } else if (num === '*') {
-        calculation += '*';
-        console.log(calculation);
-    } else if (num === '.') {
-        calculation += '.';
-        console.log(calculation);
-    } else if (num === '/') {
-        calculation += '/';
-        console.log(calculation);
-    } else if (num === '=') {
-        calculation = eval(calculation);
-        console.log(calculation);
-    } else if (num === 'clear') {
-        calculation = '';
-        console.log('Was Cleared');
+// function updateCalculator (num) {
+//     if (num === '+') {
+//         calculation += '+';
+//         console.log(calculation);
+//     } else if (num === '-') {
+//         calculation += '-';
+//         console.log(calculation);
+//     } else if (num === '*') {
+//         calculation += '*';
+//         console.log(calculation);
+//     } else if (num === '.') {
+//         calculation += '.';
+//         console.log(calculation);
+//     } else if (num === '/') {
+//         calculation += '/';
+//         console.log(calculation);
+//     } else if (num === '=') {
+//         calculation = eval(calculation);
+//         console.log(calculation);
+//     } else if (num === 'clear') {
+//         calculation = '';
+//         console.log('Was Cleared');
+//     } else {
+//         calculation += String(num);
+//         console.log(calculation);
+//     }
+
+// }
+
+let cartQuantity = 0;
+
+function updateCartQuantity (value) {
+    if (cartQuantity + value > 10) {
+        alert('The cart is full');
+        return;
+    } else if (cartQuantity + value < 0) {
+        alert('Not enough items in the cart');
+        return;
     } else {
-        calculation += String(num);
-        console.log(calculation);
+        cartQuantity += value;
+        console.log(`Cart quantity: ${cartQuantity}`);
     }
-
 }
