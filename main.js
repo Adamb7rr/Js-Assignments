@@ -357,17 +357,78 @@
 
 // }
 
-let cartQuantity = 0;
+// let cartQuantity = 0;
 
-function updateCartQuantity (value) {
-    if (cartQuantity + value > 10) {
-        alert('The cart is full');
-        return;
-    } else if (cartQuantity + value < 0) {
-        alert('Not enough items in the cart');
-        return;
-    } else {
-        cartQuantity += value;
-        console.log(`Cart quantity: ${cartQuantity}`);
+// function updateCartQuantity (value) {
+//     if (cartQuantity + value > 10) {
+//         alert('The cart is full');
+//         return;
+//     } else if (cartQuantity + value < 0) {
+//         alert('Not enough items in the cart');
+//         return;
+//     } else {
+//         cartQuantity += value;
+//         console.log(`Cart quantity: ${cartQuantity}`);
+//     }
+// }
+
+function pickComputerMove () {
+    let randomNumber = Math.random();
+
+    if (randomNumber >= 0 && randomNumber < 1 / 3) {
+        comuterMove = 'Rock';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+        comuterMove = 'Paper';
+    } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+        comuterMove = 'Scissors';
     }
+    return comuterMove;
+}
+
+const score = {
+    wins: 0,
+    losses: 0,
+    ties: 0
+}
+
+function playGame (myMove) {
+    const computerMove = pickComputerMove();
+    let res = '';
+
+    if (myMove === "Rock") {
+        if (computerMove === 'Paper') {
+            res = 'You Lose'
+        } else if (computerMove === 'Scissors') {
+            res = 'You Win'
+        } else if (computerMove === 'Rock') {
+            res = 'Tie'
+        }
+    } else if (myMove === "Paper") {
+        if (computerMove === 'Paper') {
+            res = 'Tie'
+        } else if (computerMove === 'Scissors') {
+            res = 'You Lose'
+        } else if (computerMove === 'Rock') {
+            res = 'You Win'
+        }
+    } else if (myMove === "Scissors") {
+        if (computerMove === 'Paper') {
+            res = 'You Win'
+        } else if (computerMove === 'Scissors') {
+            res = 'Tie'
+        } else if (computerMove === 'Rock') {
+            res = 'You Lose'
+        }
+    }
+
+    if (res === 'You Win') {
+        score.wins += 1
+    } else if (res === 'You Lose') {
+        score.losses += 1
+    } else if (res === 'Tie') {
+        score.ties += 1
+    }
+
+    alert(`You Choose ${myMove} and Computer choose ${computerMove}. ${res}.
+Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`)
 }

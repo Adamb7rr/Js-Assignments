@@ -368,7 +368,7 @@
         ">Clear</button>
     </p> -->
 
-    <button onclick="
+    <!-- <button onclick="
         console.log(`Cart quantity: ${cartQuantity}`);
     ">Show Quantity</button>
 
@@ -392,8 +392,8 @@
         updateCartQuantity(5)
     ">+5</button>
 
-    <!-- vvv This code was changed. vvv -->
-    <button onclick="
+    vvv This code was changed. vvv -->
+    <!-- <button onclick="
         if (cartQuantity - 1 < 0) {
             alert('Not enough items in the cart');
         } else {
@@ -408,14 +408,27 @@
 
     <button onclick="
         updateCartQuantity(-3)
-    ">-3</button>
+    ">-3</button> -->
     <!-- ^^^ This code was changed. ^^^ -->
 
-    <button onclick="
+    <!-- <button onclick="
         cartQuantity = 0;
         console.log('Cart was reset.');
         console.log(`Cart quantity: ${cartQuantity}`);
-    ">Reset Cart</button>
+    ">Reset Cart</button> --> 
+
+    <div>
+        <h1>Rock, Paper and Scissors <span>Game</span>.</h1>
+        <button onclick="
+            playGame('Rock')
+        ">Rock</button>
+        <button onclick="
+            playGame('Paper')
+        ">Paper</button>
+        <button onclick="
+            playGame('Scissors')
+        ">Scissors</button>
+    </div>
     <script src="./main.js"></script>
     <script>
         

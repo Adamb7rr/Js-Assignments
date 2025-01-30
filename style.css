@@ -6,8 +6,8 @@ body {
     align-items: center;
     background-color: #15616d;
 }
-/* div {
-    background-color: lightgray;
+div {
+    background-color: lightblue;
     max-width: fit-content;
     padding: 50px;
     text-align: center;
@@ -16,7 +16,7 @@ body {
     transition: all 0.2s ease;
 }
 
-custom {
+/*custom {
     background-color: #001524;
 }
 .custom2 {
