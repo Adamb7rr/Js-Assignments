@@ -296,7 +296,9 @@
 
 function convertLength (length, from, to) {
     let res = ''
-    if (from === 'miles' && to === 'km') {
+    if (from !== 'miles' || from !== 'km') {
+        console.log(`Invalid Unit: ${from}`)
+    } else if (from === 'miles' && to === 'km') {
         res = length * 1.6
         console.log(`${res} ${to}`)
     } else if (from === 'km' && to === 'miles') {
@@ -322,3 +324,4 @@ convertLength(500, 'miles', 'miles')
 convertLength(5, 'miles', 'km')
 convertLength(5, 'miles', 'ft')
 convertLength(5, 'km', 'ft')
+convertLength(5, 'lbs', 'lbs')
