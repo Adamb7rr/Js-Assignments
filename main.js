@@ -277,4 +277,9 @@ function convertToFahrenheit (celsius) {
     console.log((celsius * 9 / 5) + 32);
 }
 
-convertToFahrenheit(25)
+function convertToCelsius (fahrenheit) {
+    console.log((fahrenheit - 32) * 5 / 9);
+}
+
+convertToFahrenheit(25);
+convertToCelsius(86);
