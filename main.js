@@ -432,3 +432,11 @@ function playGame (myMove) {
     alert(`You Choose ${myMove} and Computer choose ${computerMove}. ${res}.
 Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`)
 }
+
+function reset () {
+    score.wins = 0
+    score.losses = 0
+    score.ties = 0
+
+    alert('Game Was Reset Scores')
+}

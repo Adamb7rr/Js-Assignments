@@ -16,13 +16,13 @@ div {
     transition: all 0.2s ease;
 }
 
-/*custom {
+.custom {
     background-color: #001524;
 }
 .custom2 {
     background-color: #588157;
     border-radius: 10px;
-} */
+}
 button {
     padding: 15px 20px;
     cursor: pointer;
