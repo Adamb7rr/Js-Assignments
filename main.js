@@ -274,12 +274,22 @@
 // greet()
 
 function convertToFahrenheit (celsius) {
-    console.log((celsius * 9 / 5) + 32);
+    return ((celsius * 9 / 5) + 32);
 }
 
 function convertToCelsius (fahrenheit) {
-    console.log((fahrenheit - 32) * 5 / 9);
+    return ((fahrenheit - 32) * 5 / 9);
 }
 
-convertToFahrenheit(25);
-convertToCelsius(86);
+function convertToTemperature (degree, unit) {
+    if (unit === 'C') {
+        let res = convertToFahrenheit(degree);
+        console.log(`${res}F`)
+    } else if (unit === 'F') {
+        let res = convertToCelsius(degree);
+        console.log(`${res}C`)
+    }
+}
+
+convertToTemperature(25, 'C')
+convertToTemperature(86, 'F')
