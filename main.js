@@ -467,6 +467,10 @@ const producs2 = {
     name: 'hat',
     price: 1095
 }
+const producs3 = {
+    name: 'hat',
+    price: 1095
+}
 
 producs2.price += 5000
 
@@ -478,4 +482,14 @@ function comparePrice (product1, producs2) {
     }
 }
 
-console.log(comparePrice(product1, producs2));
+console.log(comparePrice(producs2, producs3));
+
+function isSameProduct (product1, producs2) {
+    if (product1.name === producs2.name && product1.price === producs2.price) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isSameProduct(producs2, producs3))
