@@ -210,3 +210,27 @@
 // } else {
 //     console.log(res)
 // }
+
+// function sum (num1, num2) {
+//     return num1 + num2;
+// }
+
+// console.log(sum(2, 10));
+// console.log(sum(2, 110));
+// console.log(sum(21, 10));
+// console.log(sum(2, 1120));
+// console.log(sum(24, 10));
+
+let comuterMove = '';
+function pickComputerMove () {
+    let randomNumber = Math.random();
+
+
+    if (randomNumber >= 0 && randomNumber < 1 / 3) {
+        comuterMove = 'Rock';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+        comuterMove = 'Paper';
+    } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+        comuterMove = 'Scissors';
+    }
+} 

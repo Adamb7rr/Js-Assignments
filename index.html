@@ -270,6 +270,47 @@
             console.log(`Cart Was Reset.`);
         ">Reset Cart</button>
     </div> -->
+
+
+    <div>
+        <h1>Rock, Paper and Scissors <span>Game</span>.</h1>
+        <button onclick="
+            let myMove = 'Rock';
+            pickComputerMove();
+            
+            if (comuterMove === 'Paper'){
+                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Lose`)
+            } else if (comuterMove === 'Scissors') {
+                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Win`)
+            } else if (comuterMove === 'Rock') {
+                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. Tie`)
+            }
+        ">Rock</button>
+        <button onclick="
+            let myMove = 'Paper';
+            pickComputerMove();
+            
+            if (comuterMove === 'Paper'){
+                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. Tie`)
+            } else if (comuterMove === 'Scissors') {
+                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Lose`)
+            } else if (comuterMove === 'Rock') {
+                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Win`)
+            }
+        ">Paper</button>
+        <button onclick="
+            let myMove = 'Scissors';
+            pickComputerMove();
+            
+            if (comuterMove === 'Paper'){
+                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Win`)
+            } else if (comuterMove === 'Scissors') {
+                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. Tie`)
+            } else if (comuterMove === 'Rock') {
+                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Lose`)
+            }
+        ">Scissors</button>
+    </div>
     <script src="./main.js"></script>
     <script>
         
