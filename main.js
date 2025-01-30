@@ -302,6 +302,12 @@ function convertLength (length, from, to) {
     } else if (from === 'km' && to === 'miles') {
         res = length / 1.6
         console.log(`${res} ${to}`)
+    } else if (from === 'miles' && to === 'ft') {
+        res = length * 5280
+        console.log(`${res} ${to}`)
+    } else if (from === 'km' && to === 'ft') {
+        res = length * 3281
+        console.log(`${res} ${to}`)
     } else {
         res = length * 1
         console.log(`${res} ${to}`)
@@ -313,3 +319,6 @@ convertLength(50, 'miles', 'km')
 convertLength(32, 'km', 'miles')
 convertLength(50, 'km', 'km')
 convertLength(500, 'miles', 'miles')
+convertLength(5, 'miles', 'km')
+convertLength(5, 'miles', 'ft')
+convertLength(5, 'km', 'ft')
