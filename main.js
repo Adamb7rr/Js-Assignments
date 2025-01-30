@@ -265,10 +265,16 @@
 //     }
 // }
 
-function greet (name = 'Hi there!') {
-    console.log("Hello! " + name)
+// function greet (name = 'Hi there!') {
+//     console.log("Hello! " + name)
+// }
+// greet('Adam')
+// greet('Ziad')
+// greet('Yousef')
+// greet()
+
+function convertToFahrenheit (celsius) {
+    console.log((celsius * 9 / 5) + 32);
 }
-greet('Adam')
-greet('Ziad')
-greet('Yousef')
-greet()
+
+convertToFahrenheit(25)
