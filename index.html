@@ -226,13 +226,18 @@
         ">Scissors</button>
     </div> -->
 
-    <div class="card">
+    <!-- <div class="card">
         <h2>Cart Quantity</h2>
         <button onclick="
             console.log(`Cart quantit: ${res}`)
         ">Show Quantity</button>
         <button onclick="
-            res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res = res + 1}`)
+            // res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res = res + 1}`)
+            if (res + 1 > 10) {
+                alert('Cart is full.')
+            } else {   
+                console.log(`Cart quantit: ${res = res + 1}`)
+            }
         ">Add to Cart</button>
         <button onclick="
             res >= 10 ? alert('Cart is full.') : console.log(`Cart quantit: ${res += 2}`)
@@ -264,7 +269,7 @@
             res = 0;
             console.log(`Cart Was Reset.`);
         ">Reset Cart</button>
-    </div>
+    </div> -->
     <script src="./main.js"></script>
     <script>
         

@@ -201,7 +201,7 @@
 
 // guess === res ? console.log("You Win") : console.log("You Lose")
 
-let res = 0;
+// let res = 0;
 
 // res >= 10 ? alert('Cart is full.') : console.log(res)
 
