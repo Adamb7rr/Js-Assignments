@@ -273,23 +273,43 @@
 // greet('Yousef')
 // greet()
 
-function convertToFahrenheit (celsius) {
-    return ((celsius * 9 / 5) + 32);
-}
+// function convertToFahrenheit (celsius) {
+//     return ((celsius * 9 / 5) + 32);
+// }
 
-function convertToCelsius (fahrenheit) {
-    return ((fahrenheit - 32) * 5 / 9);
-}
+// function convertToCelsius (fahrenheit) {
+//     return ((fahrenheit - 32) * 5 / 9);
+// }
 
-function convertToTemperature (degree, unit) {
-    if (unit === 'C') {
-        let res = convertToFahrenheit(degree);
-        console.log(`${res}F`)
-    } else if (unit === 'F') {
-        let res = convertToCelsius(degree);
-        console.log(`${res}C`)
+// function convertToTemperature (degree, unit) {
+//     if (unit === 'C') {
+//         let res = convertToFahrenheit(degree);
+//         console.log(`${res}F`)
+//     } else if (unit === 'F') {
+//         let res = convertToCelsius(degree);
+//         console.log(`${res}C`)
+//     }
+// }
+
+// convertToTemperature(25, 'C')
+// convertToTemperature(86, 'F')
+
+function convertLength (length, from, to) {
+    let res = ''
+    if (from === 'miles' && to === 'km') {
+        res = length * 1.6
+        console.log(`${res} ${to}`)
+    } else if (from === 'km' && to === 'miles') {
+        res = length / 1.6
+        console.log(`${res} ${to}`)
+    } else {
+        res = length * 1
+        console.log(`${res} ${to}`)
     }
 }
 
-convertToTemperature(25, 'C')
-convertToTemperature(86, 'F')
+convertLength(1, 'miles', 'km')
+convertLength(50, 'miles', 'km')
+convertLength(32, 'km', 'miles')
+convertLength(50, 'km', 'km')
+convertLength(500, 'miles', 'miles')
