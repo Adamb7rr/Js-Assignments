@@ -221,10 +221,9 @@
 // console.log(sum(2, 1120));
 // console.log(sum(24, 10));
 
-let comuterMove = '';
+
 function pickComputerMove () {
     let randomNumber = Math.random();
-
 
     if (randomNumber >= 0 && randomNumber < 1 / 3) {
         comuterMove = 'Rock';
@@ -233,4 +232,35 @@ function pickComputerMove () {
     } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
         comuterMove = 'Scissors';
     }
-} 
+    return comuterMove;
+}
+
+function playGame (myMove) {
+    const computerMove = pickComputerMove();
+
+    if (myMove === "Rock") {
+        if (computerMove === 'Paper') {
+            return alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Lose`)
+        } else if (computerMove === 'Scissors') {
+            return alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Win`)
+        } else if (computerMove === 'Rock') {
+            return alert(`You Choose ${myMove} and Computer choose ${computerMove}. Tie`)
+        }
+    } else if (myMove === "Paper") {
+        if (computerMove === 'Paper') {
+            alert(`You Choose ${myMove} and Computer choose ${computerMove}. Tie`)
+        } else if (computerMove === 'Scissors') {
+            alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Lose`)
+        } else if (computerMove === 'Rock') {
+            alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Win`)
+        }
+    } else if (myMove === "Scissors") {
+        if (computerMove === 'Paper') {
+            alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Win`)
+        } else if (computerMove === 'Scissors') {
+            alert(`You Choose ${myMove} and Computer choose ${computerMove}. Tie`)
+        } else if (computerMove === 'Rock') {
+            alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Lose`)
+        }
+    }
+}

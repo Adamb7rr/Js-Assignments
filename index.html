@@ -161,67 +161,67 @@
         <button onclick="
             let randomNumber = Math.random();
 
-            let comuterMove = '';
+            let computerMove = '';
             let myMove = 'Rock';
             
             if (randomNumber >= 0 && randomNumber < 1 / 3) {
-                comuterMove = 'Rock';
+                computerMove = 'Rock';
             } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-                comuterMove = 'Paper';
+                computerMove = 'Paper';
             } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-                comuterMove = 'Scissors';
+                computerMove = 'Scissors';
             }
             
-            if (comuterMove === 'Paper'){
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Lose`)
-            } else if (comuterMove === 'Scissors') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Win`)
-            } else if (comuterMove === 'Rock') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. Tie`)
+            if (computerMove === 'Paper'){
+                alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Lose`)
+            } else if (computerMove === 'Scissors') {
+                alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Win`)
+            } else if (computerMove === 'Rock') {
+                alert(`You Choose ${myMove} and Computer choose ${computerMove}. Tie`)
             }
         ">Rock</button>
         <button onclick="
             let randomNumber = Math.random();
 
-            let comuterMove = '';
+            let computerMove = '';
             let myMove = 'Paper';
             
             if (randomNumber >= 0 && randomNumber < 1 / 3) {
-                comuterMove = 'Rock';
+                computerMove = 'Rock';
             } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-                comuterMove = 'Paper';
+                computerMove = 'Paper';
             } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-                comuterMove = 'Scissors';
+                computerMove = 'Scissors';
             }
             
-            if (comuterMove === 'Paper'){
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. Tie`)
-            } else if (comuterMove === 'Scissors') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Lose`)
-            } else if (comuterMove === 'Rock') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Win`)
+            if (computerMove === 'Paper'){
+                alert(`You Choose ${myMove} and Computer choose ${computerMove}. Tie`)
+            } else if (computerMove === 'Scissors') {
+                alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Lose`)
+            } else if (computerMove === 'Rock') {
+                alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Win`)
             }
         ">Paper</button>
         <button onclick="
             let randomNumber = Math.random();
 
-            let comuterMove = '';
+            let computerMove = '';
             let myMove = 'Scissors';
             
             if (randomNumber >= 0 && randomNumber < 1 / 3) {
-                comuterMove = 'Rock';
+                computerMove = 'Rock';
             } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-                comuterMove = 'Paper';
+                computerMove = 'Paper';
             } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-                comuterMove = 'Scissors';
+                computerMove = 'Scissors';
             }
             
-            if (comuterMove === 'Paper'){
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Win`)
-            } else if (comuterMove === 'Scissors') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. Tie`)
-            } else if (comuterMove === 'Rock') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Lose`)
+            if (computerMove === 'Paper'){
+                alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Win`)
+            } else if (computerMove === 'Scissors') {
+                alert(`You Choose ${myMove} and Computer choose ${computerMove}. Tie`)
+            } else if (computerMove === 'Rock') {
+                alert(`You Choose ${myMove} and Computer choose ${computerMove}. You Lose`)
             }
         ">Scissors</button>
     </div> -->
@@ -275,40 +275,13 @@
     <div>
         <h1>Rock, Paper and Scissors <span>Game</span>.</h1>
         <button onclick="
-            let myMove = 'Rock';
-            pickComputerMove();
-            
-            if (comuterMove === 'Paper'){
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Lose`)
-            } else if (comuterMove === 'Scissors') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Win`)
-            } else if (comuterMove === 'Rock') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. Tie`)
-            }
+            playGame('Rock')
         ">Rock</button>
         <button onclick="
-            let myMove = 'Paper';
-            pickComputerMove();
-            
-            if (comuterMove === 'Paper'){
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. Tie`)
-            } else if (comuterMove === 'Scissors') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Lose`)
-            } else if (comuterMove === 'Rock') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Win`)
-            }
+            playGame('Paper')
         ">Paper</button>
         <button onclick="
-            let myMove = 'Scissors';
-            pickComputerMove();
-            
-            if (comuterMove === 'Paper'){
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Win`)
-            } else if (comuterMove === 'Scissors') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. Tie`)
-            } else if (comuterMove === 'Rock') {
-                alert(`You Choose ${myMove} and Computer choose ${comuterMove}. You Lose`)
-            }
+            playGame('Scissors')
         ">Scissors</button>
     </div>
     <script src="./main.js"></script>
