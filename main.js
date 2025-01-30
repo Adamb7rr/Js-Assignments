@@ -451,11 +451,31 @@
 //     alert('Game Was Reset Scores')
 // }
 
-const product = {
+const product1 = {
     name: 'basketball',
     price: 2095
 }
-console.log(product)
+console.log(product1)
 
-product.price += 500
-console.log(product)
+product1.price += 500
+console.log(product1)
+
+product1['delivery-time'] = '3 days'
+console.log(product1)
+
+const producs2 = {
+    name: 'hat',
+    price: 1095
+}
+
+producs2.price += 5000
+
+function comparePrice (product1, producs2) {
+    if (product1.price < producs2.price) {
+        return `${product1.name} and its cost: $${product1.price}`;
+    } else {
+        return `${producs2.name} and its cost: $${producs2.price}`;
+    }
+}
+
+console.log(comparePrice(product1, producs2));
