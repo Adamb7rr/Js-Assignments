@@ -294,34 +294,65 @@
 // convertToTemperature(25, 'C')
 // convertToTemperature(86, 'F')
 
-function convertLength (length, from, to) {
-    let res = ''
-    if (from !== 'miles' || from !== 'km') {
-        console.log(`Invalid Unit: ${from}`)
-    } else if (from === 'miles' && to === 'km') {
-        res = length * 1.6
-        console.log(`${res} ${to}`)
-    } else if (from === 'km' && to === 'miles') {
-        res = length / 1.6
-        console.log(`${res} ${to}`)
-    } else if (from === 'miles' && to === 'ft') {
-        res = length * 5280
-        console.log(`${res} ${to}`)
-    } else if (from === 'km' && to === 'ft') {
-        res = length * 3281
-        console.log(`${res} ${to}`)
-    } else {
-        res = length * 1
-        console.log(`${res} ${to}`)
-    }
-}
+// function convertLength (length, from, to) {
+//     let res = ''
+//     if (from !== 'miles' || from !== 'km') {
+//         console.log(`Invalid Unit: ${from}`)
+//     } else if (from === 'miles' && to === 'km') {
+//         res = length * 1.6
+//         console.log(`${res} ${to}`)
+//     } else if (from === 'km' && to === 'miles') {
+//         res = length / 1.6
+//         console.log(`${res} ${to}`)
+//     } else if (from === 'miles' && to === 'ft') {
+//         res = length * 5280
+//         console.log(`${res} ${to}`)
+//     } else if (from === 'km' && to === 'ft') {
+//         res = length * 3281
+//         console.log(`${res} ${to}`)
+//     } else {
+//         res = length * 1
+//         console.log(`${res} ${to}`)
+//     }
+// }
 
-convertLength(1, 'miles', 'km')
-convertLength(50, 'miles', 'km')
-convertLength(32, 'km', 'miles')
-convertLength(50, 'km', 'km')
-convertLength(500, 'miles', 'miles')
-convertLength(5, 'miles', 'km')
-convertLength(5, 'miles', 'ft')
-convertLength(5, 'km', 'ft')
-convertLength(5, 'lbs', 'lbs')
+// convertLength(1, 'miles', 'km')
+// convertLength(50, 'miles', 'km')
+// convertLength(32, 'km', 'miles')
+// convertLength(50, 'km', 'km')
+// convertLength(500, 'miles', 'miles')
+// convertLength(5, 'miles', 'km')
+// convertLength(5, 'miles', 'ft')
+// convertLength(5, 'km', 'ft')
+// convertLength(5, 'lbs', 'lbs')
+
+let calculation = '';
+
+function updateCalculator (num) {
+    if (num === '+') {
+        calculation += '+';
+        console.log(calculation);
+    } else if (num === '-') {
+        calculation += '-';
+        console.log(calculation);
+    } else if (num === '*') {
+        calculation += '*';
+        console.log(calculation);
+    } else if (num === '.') {
+        calculation += '.';
+        console.log(calculation);
+    } else if (num === '/') {
+        calculation += '/';
+        console.log(calculation);
+    } else if (num === '=') {
+        calculation = eval(calculation);
+        console.log(calculation);
+    } else if (num === 'clear') {
+        calculation = '';
+        console.log('Was Cleared');
+    } else {
+        calculation += String(num);
+        console.log(calculation);
+    }
+
+}
