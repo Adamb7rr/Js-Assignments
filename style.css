@@ -17,7 +17,8 @@ div {
 }
 
 .custom {
-    background-color: #001524;
+    background-color: red;
+    color: #fff;
 }
 .custom2 {
     background-color: #588157;
@@ -33,4 +34,12 @@ button {
 }
 button:hover {
     transform: scale(1.1);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
