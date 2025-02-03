@@ -541,7 +541,8 @@ let rock = document.querySelector('.rock')
 
 console.log(rock.innerHTML)
 
-
+let message = document.querySelector('.show')
+let sc = document.querySelector('.score')
 
 function playGame (myMove) {
     const computerMove = pickComputerMove();
@@ -585,8 +586,13 @@ function playGame (myMove) {
 
     // console.log(localStorage.setItem('score', JSON.stringify('score')))
 
-    alert(`You Choose ${myMove} and Computer choose ${computerMove}. ${res}.
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`)
+    //     alert(`You Choose ${myMove} and Computer choose ${computerMove}. ${res}.
+    // Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`)
+
+    // message.innerHTML = `You Choose ${myMove} and Computer choose ${computerMove}.`
+    message.innerText = "You: " + myMove + '\n' + "Com: " + computerMove + '\n' + res
+
+    sc.innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`
 }
 
 
@@ -597,5 +603,8 @@ function reset () {
     score.ties = 0
     localStorage.removeItem('score')
 
-    alert('Game Was Reset Scores')
+    // alert('Game Was Reset Scores')
+
+    message.innerHTML = `Score Reset`
+    sc.innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`
 }
