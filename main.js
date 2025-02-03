@@ -608,3 +608,23 @@ function reset () {
     message.innerHTML = `Score Reset`
     sc.innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`
 }
+
+
+
+let price = document.querySelector('.price')
+
+function calc () {
+    // price.innerHTML = `${cost_order}`
+    const cost_order = document.querySelector('.cost')
+    let ship = Number(cost_order.value);
+    console.log(typeof (Number(cost_order.value)))
+    console.log(cost_order.value)
+    if (ship <= 40) {
+
+        ship = ship + 10
+        price.innerHTML = `$${ship} \t with $10 shipping.`
+    } else {
+        // ship = cost_order.value + 0
+        price.innerText = `$${ship} \t with FREE shipping.`
+    }
+}
