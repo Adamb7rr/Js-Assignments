@@ -509,7 +509,7 @@ console.log(subscribeButton)
 function change () {
     if (subscribeButton.innerHTML === 'Subscribe') {
         subscribeButton.innerHTML = 'Subscribed'
-        changeColor.style = 'background-color: #588157'
+        changeColor.style = 'background-color: #EEE; color: #333'
     } else if (subscribeButton.innerHTML === 'Subscribed') {
         subscribeButton.innerHTML = 'Subscribe'
         changeColor.style = ''
