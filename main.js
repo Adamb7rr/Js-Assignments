@@ -636,4 +636,7 @@
 // }
 
 let but = document.querySelector('button')
+let but2 = document.querySelector('.second-but')
+
 console.log(but)
+but2.innerHTML = '9b done!'
