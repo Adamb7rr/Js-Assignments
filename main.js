@@ -692,7 +692,7 @@ function calc () {
 
         price.innerHTML = `$${ship} \t with $10 shipping.`
     } else {
-        // ship = cost_order.value + 0
+
         price.innerText = `$${ship} \t with FREE shipping.`
     }
 }
