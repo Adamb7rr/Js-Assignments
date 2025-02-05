@@ -484,7 +484,10 @@
     ">tails</button>
     <p class="show"></p> -->
 
-    <input type="text" placeholder="Enter Your Name">
+    <input type="text" placeholder="Enter Your Name" onkeydown="
+        // console.log(event.key)
+        handleButton(event)
+    ">
     <button onclick="
         displayName()
     ">Submit</button>

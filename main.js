@@ -659,9 +659,16 @@
 // let name = document.querySelector('input')
 // console.log(name.innerText)
 
+
 function displayName () {
     let name = document.querySelector('input')
     let show = document.querySelector('.show')
     // console.log(name.value)
     show.innerHTML = `Your Name Is: ${name.value}`
+}
+
+function handleButton (event) {
+    if (event.key === 'Enter') {
+        displayName()
+    }
 }
