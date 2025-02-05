@@ -484,14 +484,27 @@
     ">tails</button>
     <p class="show"></p> -->
 
-    <input type="text" placeholder="Enter Your Name" onkeydown="
+    <!-- <input type="text" placeholder="Enter Your Name" onkeydown="
         // console.log(event.key)
         handleButton(event)
     ">
     <button onclick="
         displayName()
     ">Submit</button>
-    <p class="show"></p>
+    <p class="show"></p> -->
+
+    <div class="Shipping">
+        <h1>Amazone Shipping Calculator</h1>
+        <h3>Orders under $40 = +$10 shipping.</h3>
+        <h3>Orders over $40 = FREE shipping.</h3>
+        <input class="cost" type="text" placeholder="Cost of order" onkeydown="
+            handleKey(event);
+        ">
+        <button class="Calc" onclick="
+            calc()
+        ">Calculate</button>
+        <p class="price"></p>
+    </div>
     
     <script src="./main.js"></script>
     <script>

@@ -660,15 +660,45 @@
 // console.log(name.innerText)
 
 
-function displayName () {
-    let name = document.querySelector('input')
-    let show = document.querySelector('.show')
-    // console.log(name.value)
-    show.innerHTML = `Your Name Is: ${name.value}`
+// function displayName () {
+//     let name = document.querySelector('input')
+//     let show = document.querySelector('.show')
+//     // console.log(name.value)
+//     show.innerHTML = `Your Name Is: ${name.value}`
+// }
+
+// function handleButton (event) {
+//     if (event.key === 'Enter') {
+//         displayName()
+//     }
+// }
+
+let price = document.querySelector('.price')
+
+function calc () {
+    // price.innerHTML = `${cost_order}`
+    const cost_order = document.querySelector('.cost')
+    let ship = Number(cost_order.value);
+    // console.log(typeof (Number(cost_order.value)))
+    // console.log(cost_order.value)
+    // console.log(Math.round(ship * 100) / 100)
+    // console.log(parseFloat(ship).toFixed(3))
+    // console.log(ship)
+    // ship = Math.round(ship * 100) / 100
+    console.log(ship)
+    if (ship <= 40) {
+        ship = ship + 10
+        ship = Math.round(ship * 100) / 100
+
+        price.innerHTML = `$${ship} \t with $10 shipping.`
+    } else {
+        // ship = cost_order.value + 0
+        price.innerText = `$${ship} \t with FREE shipping.`
+    }
 }
 
-function handleButton (event) {
+function handleKey (event) {
     if (event.key === 'Enter') {
-        displayName()
+        calc()
     }
 }
