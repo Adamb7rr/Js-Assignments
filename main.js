@@ -635,8 +635,33 @@
 //     }
 // }
 
-let but = document.querySelector('button')
-let but2 = document.querySelector('.second-but')
+// let but = document.querySelector('button')
+// let but2 = document.querySelector('.second-but')
 
-console.log(but)
-but2.innerHTML = '9b done!'
+// console.log(but)
+// but2.innerHTML = '9b done!'
+
+// const head = document.querySelector('.heads')
+// const tail = document.querySelector('.tails')
+// const show = document.querySelector('.show')
+
+
+// function play (arg) {
+//     let res = ''
+//     if (arg === 'heads') {
+//         res = 'heads'
+//     } else if (arg === 'tails') {
+//         res = 'tails'
+//     }
+//     return show.innerHTML = `You Choose: ${res}`
+// }
+
+// let name = document.querySelector('input')
+// console.log(name.innerText)
+
+function displayName () {
+    let name = document.querySelector('input')
+    let show = document.querySelector('.show')
+    // console.log(name.value)
+    show.innerHTML = `Your Name Is: ${name.value}`
+}
