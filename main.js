@@ -702,3 +702,31 @@ function handleKey (event) {
         calc()
     }
 }
+
+let cartQuantity = 0;
+const display = document.querySelector('.display');
+const message = document.querySelector('.message');
+
+
+function updateCartQuantity (value) {
+    if (cartQuantity + value > 10) {
+        message.innerHTML = 'The cart is full'
+        return;
+    } else if (cartQuantity + value < 0) {
+        // alert();
+        message.innerHTML = 'Not enough items in the cart';
+        return;
+    } else {
+        cartQuantity += value;
+        message.innerHTML = ''
+        console.log(`Cart quantity: ${cartQuantity}`);
+        display.innerHTML = `${cartQuantity}`
+    }
+
+    // if (cartQuantity + value > 10 || cartQuantity + value < 0) {
+    //     // alert();
+    //     // message.innerHTML = 'The cart is full'
+
+    // }
+}
+
