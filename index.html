@@ -504,7 +504,17 @@
             calc()
         ">Calculate</button>
         <p class="price"></p>
+        <div>
+            <input type="text" class="inp" placeholder="Typing Something..." onkeyup="
+                    // console.log(event.key)
+                    // document.querySelector('.show').innerHTML += `${event.key}`
+                    const inputElement = document.querySelector('.inp')
+                    document.querySelector('.show').innerHTML = inputElement.value
+                ">
+            <p class="show"></p>
+        </div>
     </div>
+    
     
     <script src="./main.js"></script>
     <script>
