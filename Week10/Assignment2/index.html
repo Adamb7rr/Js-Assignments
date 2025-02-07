@@ -9,7 +9,8 @@
 <body>
     <div>
         <button class="js-button" onclick="
-                if (jsButton.classList.contains('.js-button') === true) {
+                const jsButton = document.querySelector('.js-button')
+                if (jsButton.classList.contains('js-button')) {
                     console.log('Exist')
                 } else {
                     console.log('Not Exist')
