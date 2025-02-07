@@ -569,94 +569,108 @@
             <p>Cart quantity: <span class="display">0</span></p>
             <p class="message"></p>
         </div>
-        <div>
+        <div class="calc">
+            <h1>Calculator</h1>
+            <h3 class="result-calc"></h3>
             <p>
                 <button onclick="
-                    updateCalculator(1)
+                    // let calc = ''
+                    // calc += '1'
+                    // console.log(calc)
+                    updateCalculator('1')
                 ">1</button>
-
                 <button onclick="
-                    updateCalculator(2)
+                // calc += '2'
+                // console.log(calc)
+                updateCalculator('2')
                 ">2</button>
-
                 <button onclick="
-                    updateCalculator(3)
+                    // calc += '3'
+                    // console.log(calc)
+                    updateCalculator('3')
                 ">3</button>
-
-                <button onclick="
+                <button class="custom" onclick="
+                    // calc += '6'
+                    // console.log(calc)
                     updateCalculator('+')
                 ">+</button>
             </p>
-
             <p>
                 <button onclick="
-                    updateCalculator(4)
+                    // calc += '+'
+                    // console.log(calc)
+                    updateCalculator('4')
                 ">4</button>
-
                 <button onclick="
-                    updateCalculator(5)
+                    // calc += '4'
+                    // console.log(calc)
+                    updateCalculator('5')
                 ">5</button>
-
                 <button onclick="
-                    updateCalculator(6)
+                    // calc += '5'
+                    // console.log(calc)
+                    updateCalculator('6')
                 ">6</button>
-
-                <button onclick="
+                <button class="custom" onclick="
+                    // calc += '-'
+                    // console.log(calc)
                     updateCalculator('-')
                 ">-</button>
             </p>
-
             <p>
                 <button onclick="
-                    updateCalculator(7)
+                    // calc += '7'
+                    // console.log(calc)
+                    updateCalculator('7')
                 ">7</button>
-
                 <button onclick="
-                    updateCalculator(8)
+                    // calc += '8'
+                    // console.log(calc)
+                    updateCalculator('8')
                 ">8</button>
-
                 <button onclick="
-                    updateCalculator(9)
+                    // calc += '9'
+                    // console.log(calc)
+                    updateCalculator('9')
                 ">9</button>
-
-                <button onclick="
+                <button class="custom" onclick="
+                    // calc += '*'
+                    // console.log(calc)
                     updateCalculator('*')
                 ">*</button>
             </p>
-
             <p>
                 <button onclick="
-                    updateCalculator(0)
+                    // calc += '0'
+                    // console.log(calc)
+                    updateCalculator('0')
                 ">0</button>
-
                 <button onclick="
+                    // calc += '.'
+                    // console.log(calc)
                     updateCalculator('.')
                 ">.</button>
-
-                <button onclick="
-                    // Note: eval() takes a string and runs it as code.
-                    // Avoid using eval() in real world projects since
-                    // it can potentially be given harmful code to run.
-                    // Only use eval() for learning purposes.
-                    updateCalculator('=')
-                ">=</button>
-
-                <button onclick="
+                <button class="custom" onclick="
+                    // calc += '/'
+                    // console.log(calc)
                     updateCalculator('/')
                 ">/</button>
-                </p>
-
-                <p>
-                <button onclick="
-                    updateCalculator('clear')
-                ">Clear</button>
+                <button class="custom" onclick="
+                    // calc =  eval(calc)
+                    // console.log(`result: ${calc}`)
+                    updateCalculator('=')
+                ">=</button>
+                
             </p>
+            <button class="custom2" onclick="
+                // calc = ''
+                // console.log(`clear.`)
+                // console.log(calc)
+                updateCalculator('clear')
+            ">Clear</button>
+        
         </div>
     
     <script src="./main.js"></script>
-    <script>
-        
-        
-    </script>
 </body>
 </html>

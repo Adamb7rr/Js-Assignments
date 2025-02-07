@@ -730,3 +730,53 @@ function updateCartQuantity (value) {
     // }
 }
 
+let calculator = '';
+let resultCalc = document.querySelector('.result-calc');
+
+function updateCalculator (num) {
+    // if (num === '+') {
+    //     calculation += '+';
+    //     console.log(calculation);
+    // } else if (num === '-') {
+    //     calculation += '-';
+    //     console.log(calculation);
+    // } else if (num === '*') {
+    //     calculation += '*';
+    //     console.log(calculation);
+    // } else if (num === '.') {
+    //     calculation += '.';
+    //     console.log(calculation);
+    // } else if (num === '/') {
+    //     calculation += '/';
+    //     console.log(calculation);
+    // } else if (num === '=') {
+    //     calculation = eval(calculation);
+    //     console.log(calculation);
+    // } else if (num === 'clear') {
+    //     calculation = '';
+    //     console.log('Was Cleared');
+    // } else {
+    //     calculation += String(num);
+    //     console.log(calculation);
+    // }
+    // let calc = '';
+
+    if (num === '=') {
+        calculator = eval(calculator)
+        // console.log(calculator)
+        resultCalc.innerHTML = `${calculator}`
+    } else if (num === 'clear') {
+        calculator = ''
+        // console.log(calculator)
+        resultCalc.innerHTML = `Clear done. 
+                    ${calculator}`
+    } else {
+        calculator += num;
+        // console.log(calculator)
+        resultCalc.innerHTML = `${calculator}`
+    }
+
+
+
+}
+
