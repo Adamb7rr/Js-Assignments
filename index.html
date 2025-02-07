@@ -494,16 +494,42 @@
     <p class="show"></p> -->
 
     <div class="Shipping">
-        <h1>Amazone Shipping Calculator</h1>
-        <h3>Orders under $40 = +$10 shipping.</h3>
-        <h3>Orders over $40 = FREE shipping.</h3>
-        <input class="cost" type="text" placeholder="Cost of order" onkeydown="
-            handleKey(event);
-        ">
-        <button class="Calc" onclick="
-            calc()
-        ">Calculate</button>
-        <p class="price"></p>
+        <h1 class="main">Some Practice</h1>
+        <div>
+            <h2>YouTube Subscribe Button</h2>
+            <button class="js-sub css-sub" onclick="
+                subscribe_button()
+            ">Subscribe</button>
+        </div>
+        <div class="game">
+            <h1>Rock, Paper and Scissors <span>Game</span>.</h1>
+            <button class="rock custom-but" onclick="
+                playGame('✊')
+            ">✊</button>
+            <button class="paper custom-but" onclick="
+                playGame('✋')
+            ">✋</button>
+            <button class="scissors custom-but" onclick="
+                playGame('✌️')
+            ">✌️</button>
+            <h2 class="show-game"></h2>
+            <h3 class="score"></h2>
+            <button class="custom2 reset" onclick="
+                reset()
+            ">Reset Score</button>
+        </div>
+        <div>
+            <h1>Amazone Shipping Calculator</h1>
+            <h3>Orders under $40 = +$10 shipping.</h3>
+            <h3>Orders over $40 = FREE shipping.</h3>
+            <input class="cost" type="text" placeholder="Cost of order" onkeydown="
+                handleKey(event);
+            ">
+            <button class="Calc" onclick="
+                calc()
+            ">Calculate</button>
+            <p class="price"></p>
+        </div>
         <div>
             <input type="text" class="inp" placeholder="Typing Something..." onkeyup="
                     // console.log(event.key)
@@ -513,8 +539,7 @@
                 ">
             <p class="show"></p>
         </div>
-        <br>
-        <br>
+        
         <div>
             <button onclick="
                 console.log(`Cart quantity: ${cartQuantity}`);
@@ -668,8 +693,9 @@
                 // console.log(calc)
                 updateCalculator('clear')
             ">Clear</button>
-        
         </div>
+        
+    </div>
     
     <script src="./main.js"></script>
 </body>

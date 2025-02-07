@@ -705,7 +705,7 @@ function handleKey (event) {
 
 let cartQuantity = 0;
 const display = document.querySelector('.display');
-const message = document.querySelector('.message');
+// const message = document.querySelector('.message');
 
 
 function updateCartQuantity (value) {
@@ -780,3 +780,107 @@ function updateCalculator (num) {
 
 }
 
+const subscribe = document.querySelector('.js-sub');
+
+function subscribe_button () {
+    console.log(subscribe)
+    if (subscribe.innerText === 'Subscribe') {
+        subscribe.innerText = 'Subscribed'
+        subscribe.classList.add('is-sub')
+    } else {
+        subscribe.innerText = 'Subscribe'
+        subscribe.classList.remove('is-sub')
+    }
+}
+
+function pickComputerMove () {
+    let randomNumber = Math.random();
+
+    if (randomNumber >= 0 && randomNumber < 1 / 3) {
+        comuterMove = '✊';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+        comuterMove = '✋';
+    } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+        comuterMove = '✌️';
+    }
+    return comuterMove;
+}
+
+let score = JSON.parse(localStorage.getItem
+    ('score')) || {
+    wins: 0,
+    losses: 0,
+    ties: 0
+};
+
+let rock = document.querySelector('.rock')
+
+console.log(rock.innerHTML)
+
+let message = document.querySelector('.show-game')
+let sc = document.querySelector('.score')
+
+function playGame (myMove) {
+    const computerMove = pickComputerMove();
+    let res = '';
+
+    if (myMove === "✊") {
+        if (computerMove === '✋') {
+            res = 'You Lose'
+        } else if (computerMove === '✌️') {
+            res = 'You Win'
+        } else if (computerMove === '✊') {
+            res = 'Tie'
+        }
+    } else if (myMove === "✋") {
+        if (computerMove === '✋') {
+            res = 'Tie'
+        } else if (computerMove === '✌️') {
+            res = 'You Lose'
+        } else if (computerMove === '✊') {
+            res = 'You Win'
+        }
+    } else if (myMove === "✌️") {
+        if (computerMove === '✋') {
+            res = 'You Win'
+        } else if (computerMove === '✌️') {
+            res = 'Tie'
+        } else if (computerMove === '✊') {
+            res = 'You Lose'
+        }
+    }
+
+    if (res === 'You Win') {
+        score.wins += 1
+    } else if (res === 'You Lose') {
+        score.losses += 1
+    } else if (res === 'Tie') {
+        score.ties += 1
+    }
+
+    localStorage.setItem('score', JSON.stringify(score))
+
+    // console.log(localStorage.setItem('score', JSON.stringify('score')))
+
+    //     alert(`You Choose ${myMove} and Computer choose ${computerMove}. ${res}.
+    // Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`)
+
+    // message.innerHTML = `You Choose ${myMove} and Computer choose ${computerMove}.`
+    message.innerText = "You " + myMove + '|' + computerMove + "Com " + '\n' + '\n' + res
+
+    sc.innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`
+}
+
+
+
+function reset () {
+    score.wins = 0
+    score.losses = 0
+    score.ties = 0
+    localStorage.removeItem('score')
+
+    // alert('Game Was Reset Scores')
+
+    message.innerHTML = `Score Reset`
+    sc.innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`
+}
