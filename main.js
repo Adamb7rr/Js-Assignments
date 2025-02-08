@@ -911,3 +911,11 @@ function list () {
     }
 
 }
+
+
+const nums = [1, 1, 3]
+let sum = 0
+for (let i = 0; i < nums.length; i++) {
+    sum += nums[i]
+}
+console.log(sum)
