@@ -903,6 +903,11 @@ const show = document.querySelector('.show')
 function list () {
     // console.log(name.value)
     myArray.push(name.value)
-    show.innerHTML = myArray
+    // show.innerHTML = myArray
     console.log(myArray)
+    name.value = ''
+    for (let i = 0; i < myArray.length; i++) {
+        show.innerHTML = `${myArray[i]}`
+    }
+
 }
