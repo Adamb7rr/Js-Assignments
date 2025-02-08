@@ -894,28 +894,40 @@
 // myArray.splice(1, 2)
 // console.log(myArray)
 
-const myArray = [];
+// const myArray = [];
 
-const name = document.querySelector('.todo-name')
-const but = document.querySelector('.todo-but')
-const show = document.querySelector('.show')
+// const name = document.querySelector('.todo-name')
+// const but = document.querySelector('.todo-but')
+// const show = document.querySelector('.show')
 
-function list () {
-    // console.log(name.value)
-    myArray.push(name.value)
-    // show.innerHTML = myArray
-    console.log(myArray)
-    name.value = ''
-    for (let i = 0; i < myArray.length; i++) {
-        show.innerHTML = `${myArray[i]}`
-    }
+// // for (let i = 0; i < myArray.length; i++) {
+// //     console.log(myArray[i])
+// //     const html = `<p>${myArray[i]}</p>`
+// //     console.log(html)
 
-}
+// //     show.innerHTML += html
+// // }
 
+// function list () {
+//     let todoList = ''
 
-const nums = [1, 1, 3]
-let sum = 0
-for (let i = 0; i < nums.length; i++) {
-    sum += nums[i]
-}
-console.log(sum)
+//     for (let i = 0; i < myArray.length; i++) {
+//         const html = `<p>${myArray[i]}</p>`
+//         todoList += html
+//     }
+//     show.innerHTML = todoList
+
+// }
+
+// function addtodo () {
+//     myArray.push(name.value)
+
+//     name.value = ''
+
+//     list()
+// }
+
+const nums = [10, 20, 30]
+
+nums[2] = 99
+console.log(nums)

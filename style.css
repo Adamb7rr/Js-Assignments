@@ -12,7 +12,7 @@ body {
     border-bottom: 10px solid #15616d;
     border-radius: 40%;
 }
-div {
+/* div {
     background-color: lightblue;
     max-width: 100%;
     margin: 10px auto;
@@ -23,7 +23,7 @@ div {
     transition: all 0.2s ease;
     border-bottom: 5px solid #588157;
     
-}
+} */
 br {
     width: 100%;
     margin: 20px;
