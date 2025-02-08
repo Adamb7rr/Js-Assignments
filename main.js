@@ -885,11 +885,24 @@
 //     sc.innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`
 // }
 
-const myArray = [1, 2, 3, 4]
-console.log(myArray)
+// const myArray = [1, 2, 3, 4]
+// console.log(myArray)
 
-myArray.push(50)
-console.log(myArray)
+// myArray.push(50)
+// console.log(myArray)
 
-myArray.splice(1, 2)
-console.log(myArray)
+// myArray.splice(1, 2)
+// console.log(myArray)
+
+const myArray = [];
+
+const name = document.querySelector('.todo-name')
+const but = document.querySelector('.todo-but')
+const show = document.querySelector('.show')
+
+function list () {
+    // console.log(name.value)
+    myArray.push(name.value)
+    show.innerHTML = myArray
+    console.log(myArray)
+}
