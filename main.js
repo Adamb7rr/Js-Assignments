@@ -973,19 +973,24 @@
 // addOne([-2, -3, 0, 99])
 
 function minMax (nums) {
-    let maxNum = -Infinity
-    let minNum = Infinity
+    const res = {
+        minNum: null,
+        maxNum: null
+    }
 
-    for (let num of nums) {
-        if (num > maxNum) {
-            maxNum = num
+    for (let i = 0; i < nums.length; i++) {
+        const value = nums[i]
+        if (res.minNum === null || value < res.minNum) {
+            res.minNum = value
         }
-        if (num < minNum) {
-            minNum = num
+        if (res.maxNum === null || value > res.maxNum) {
+            res.maxNum = value
         }
     }
-    console.log(`min: ${minNum}, max: ${maxNum}`)
+    console.log(`min: ${res.minNum}, max: ${res.maxNum}`)
 }
 
-minMax([1, -3, 5])
-minMax([-2, 3, -5, 7, 10])
+minMax([1, -3, 5]) //min: -3, max: 5
+minMax([-2, 3, -5, 7, 10]) // min: -5, max: 10
+minMax([]) // min: null, max: null
+minMax([3]) // min: 3, max: 3
