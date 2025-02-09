@@ -1041,20 +1041,32 @@
 // }
 
 
-const nameValue = document.querySelector('.todo-name')
-const dateValue = document.querySelector('.todo-date')
+
+
 const display = document.querySelector('.show')
 
-let myArr = []
+const myArr = [{
+    nameValue: 'make lunch',
+    dateValue: '2022-12-22'
+},
+{
+    nameValue: 'make dinner',
+    dateValue: '2022-12-22'
+}]
+
 
 function list () {
     let todoList = ''
 
     for (let i = 0; i < myArr.length; i++) {
+        const todoObject = myArr[i]
+        const {nameValue, dateValue} = todoObject
+        // const nameValue = todoObject.nameValue
+        // const dateValue = todoObject.dateValue
         const html = `
         <p>
-            ${myArr[i]}
-            <p>${dateValue.value}</p>
+            ${nameValue}
+            <p>${dateValue}</p>
             <button onclick="
                 myArr.splice(${i}, 1)
                 list()
@@ -1068,7 +1080,15 @@ function list () {
 }
 
 function addtodo () {
-    myArr.push(nameValue.value)
+    const dvalue = document.querySelector('.todo-date')
+    const dateValue = dvalue.value
+    const nvalue = document.querySelector('.todo-name')
+    const nameValue = nvalue.value
+    myArr.push({
+        nameValue,
+        dateValue
+    })
     nameValue.value = ''
+    dateValue.value = ''
     list()
 }
