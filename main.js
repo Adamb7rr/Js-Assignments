@@ -932,9 +932,12 @@
 // nums[2] = 99
 // console.log(nums)
 
-function getLastValue (array) {
-    console.log(array[array.length - 1])
+function arraySwap (array) {
+    let last = array[0]
+    array[0] = array[array.length - 1]
+    array[array.length - 1] = last
+    return array
 }
 
-getLastValue([1, 20, 22, 24, 5])
-getLastValue(['hi', 'hello', 'good'])
+console.log(arraySwap([1, 20, 22, 24, 5]))
+console.log(arraySwap(['hi', 'hello', 'good']))
