@@ -961,13 +961,13 @@
 // }
 // console.log(newArr)
 
-function addOne (arr) {
-    let newArr = []
+// function addOne (arr) {
+//     let newArr = []
 
-    for (let i = 0; i < arr.length; i++) {
-        newArr.push(1 + arr[i])
-    }
-    console.log(newArr)
-}
-addOne([1, 2, 3])
-addOne([-2, -3, 0, 99])
+//     for (let i = 0; i < arr.length; i++) {
+//         newArr.push(1 + arr[i])
+//     }
+//     console.log(newArr)
+// }
+// addOne([1, 2, 3])
+// addOne([-2, -3, 0, 99])
