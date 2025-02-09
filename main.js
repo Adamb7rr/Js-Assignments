@@ -995,18 +995,80 @@
 // minMax([]) // min: null, max: null
 // minMax([3]) // min: 3, max: 3
 
-function countWords (words) {
-    const res = {}
+// function countWords (words) {
+//     const res = {}
 
-    for (let i = 0; i < words.length; i++) {
-        const arg = words[i]
-        if (!res[arg]) {
-            res[arg] = 1
-        } else {
-            res[arg]++
-        }
+//     for (let i = 0; i < words.length; i++) {
+//         const arg = words[i]
+//         if (!res[arg]) {
+//             res[arg] = 1
+//         } else {
+//             res[arg]++
+//         }
+//     }
+//     console.log(res) //{apple: 3, grape: 1}
+
+// }
+// countWords(['apple', 'grape', 'apple', 'apple'])
+
+// 1 - display value it is inside inputs.
+// 2 - display it in div in html and add button.
+
+
+// function list () {
+//     let todoList = ''
+
+//     for (let i = 0; i < myArray.length; i++) {
+//         const html = `<p>${myArray[i]}</p>`
+//         todoList += html
+//     }
+//     show.innerHTML = todoList
+
+// }
+
+// const name = document.querySelector('.todo-name')
+// const but = document.querySelector('.todo-but')
+// const show = document.querySelector('.show')
+
+// let myArray = []
+
+// function addtodo () {
+//     myArray.push(name.value)
+
+//     name.value = ''
+
+//     list()
+// }
+
+
+const nameValue = document.querySelector('.todo-name')
+const dateValue = document.querySelector('.todo-date')
+const display = document.querySelector('.show')
+
+let myArr = []
+
+function list () {
+    let todoList = ''
+
+    for (let i = 0; i < myArr.length; i++) {
+        const html = `
+        <p>
+            ${myArr[i]}
+            <p>${dateValue.value}</p>
+            <button onclick="
+                myArr.splice(${i}, 1)
+                list()
+            ">Delete</button>
+        </p>
+        `
+        todoList += html
     }
-    console.log(res) //{apple: 3, grape: 1}
 
+    display.innerHTML = todoList
 }
-countWords(['apple', 'grape', 'apple', 'apple'])
+
+function addtodo () {
+    myArr.push(nameValue.value)
+    nameValue.value = ''
+    list()
+}
