@@ -946,9 +946,28 @@
 //     console.log(i)
 // }
 
-let i = 5
+// let i = 5
 
-while (i >= 0) {
-    console.log(i)
-    i--
+// while (i >= 0) {
+//     console.log(i)
+//     i--
+// }
+
+// const Arr = [1, 2, 3]
+// let newArr = []
+// for (let i = 0; i < Arr.length; i++) {
+//     newArr.push(Arr[i] + 1)
+
+// }
+// console.log(newArr)
+
+function addOne (arr) {
+    let newArr = []
+
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(1 + arr[i])
+    }
+    console.log(newArr)
 }
+addOne([1, 2, 3])
+addOne([-2, -3, 0, 99])
