@@ -972,25 +972,41 @@
 // addOne([1, 2, 3])
 // addOne([-2, -3, 0, 99])
 
-function minMax (nums) {
-    const res = {
-        minNum: null,
-        maxNum: null
-    }
+// function minMax (nums) {
+//     const res = {
+//         minNum: null,
+//         maxNum: null
+//     }
 
-    for (let i = 0; i < nums.length; i++) {
-        const value = nums[i]
-        if (res.minNum === null || value < res.minNum) {
-            res.minNum = value
-        }
-        if (res.maxNum === null || value > res.maxNum) {
-            res.maxNum = value
+//     for (let i = 0; i < nums.length; i++) {
+//         const value = nums[i]
+//         if (res.minNum === null || value < res.minNum) {
+//             res.minNum = value
+//         }
+//         if (res.maxNum === null || value > res.maxNum) {
+//             res.maxNum = value
+//         }
+//     }
+//     console.log(`min: ${res.minNum}, max: ${res.maxNum}`)
+// }
+
+// minMax([1, -3, 5]) //min: -3, max: 5
+// minMax([-2, 3, -5, 7, 10]) // min: -5, max: 10
+// minMax([]) // min: null, max: null
+// minMax([3]) // min: 3, max: 3
+
+function countWords (words) {
+    const res = {}
+
+    for (let i = 0; i < words.length; i++) {
+        const arg = words[i]
+        if (!res[arg]) {
+            res[arg] = 1
+        } else {
+            res[arg]++
         }
     }
-    console.log(`min: ${res.minNum}, max: ${res.maxNum}`)
+    console.log(res) //{apple: 3, grape: 1}
+
 }
-
-minMax([1, -3, 5]) //min: -3, max: 5
-minMax([-2, 3, -5, 7, 10]) // min: -5, max: 10
-minMax([]) // min: null, max: null
-minMax([3]) // min: 3, max: 3
+countWords(['apple', 'grape', 'apple', 'apple'])
