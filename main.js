@@ -942,6 +942,13 @@
 // console.log(arraySwap([1, 20, 22, 24, 5]))
 // console.log(arraySwap(['hi', 'hello', 'good']))
 
-for (let i = 5; i >= 0; i--) {
+// for (let i = 5; i >= 0; i--) {
+//     console.log(i)
+// }
+
+let i = 5
+
+while (i >= 0) {
     console.log(i)
+    i--
 }
