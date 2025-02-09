@@ -932,12 +932,16 @@
 // nums[2] = 99
 // console.log(nums)
 
-function arraySwap (array) {
-    let last = array[0]
-    array[0] = array[array.length - 1]
-    array[array.length - 1] = last
-    return array
-}
+// function arraySwap (array) {
+//     let last = array[0]
+//     array[0] = array[array.length - 1]
+//     array[array.length - 1] = last
+//     return array
+// }
 
-console.log(arraySwap([1, 20, 22, 24, 5]))
-console.log(arraySwap(['hi', 'hello', 'good']))
+// console.log(arraySwap([1, 20, 22, 24, 5]))
+// console.log(arraySwap(['hi', 'hello', 'good']))
+
+for (let i = 0; i <= 10; i++) {
+    console.log(i)
+}
