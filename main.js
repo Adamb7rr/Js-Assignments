@@ -927,7 +927,14 @@
 //     list()
 // }
 
-const nums = [10, 20, 30]
+// const nums = [10, 20, 30]
 
-nums[2] = 99
-console.log(nums)
+// nums[2] = 99
+// console.log(nums)
+
+function getLastValue (array) {
+    console.log(array[array.length - 1])
+}
+
+getLastValue([1, 20, 22, 24, 5])
+getLastValue(['hi', 'hello', 'good'])
