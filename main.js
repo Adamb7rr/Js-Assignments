@@ -1093,12 +1093,21 @@
 //     list()
 // }
 
-const arr = ['hello', 'world', 'search', 'good']
+// const arr = ['hello', 'world', 'search', 'good']
 
-let res = -1
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 'search') {
-        res = i
-    }
-}
-console.log(res)
+// let res = -1
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 'search') {
+//         res = i
+//     }
+// }
+// console.log(res)
+
+// [
+//     'Make Dinner',
+//     'Make Launch',
+//     'Make Breakfast'
+// ].forEach(function(value, i) {
+//     console.log(i + ':' + value)
+// })
+
