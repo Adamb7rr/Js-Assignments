@@ -1139,31 +1139,38 @@
 //     }, 2000)
 // })
 
-const tit = document.querySelector('title')
-const add = document.querySelector('.add')
-const remove = document.querySelector('.remove')
+// const tit = document.querySelector('title')
+// const add = document.querySelector('.add')
+// const remove = document.querySelector('.remove')
 
-let num = 1
-let timeoutId;
-add.addEventListener('click', function() {
-    num++
-})
-remove.addEventListener('click', function() {
-    num--
-})
+// let num = 1
+// let timeoutId;
+// add.addEventListener('click', function() {
+//     num++
+// })
+// remove.addEventListener('click', function() {
+//     num--
+// })
 
 
 
-if (num <= 0) {
-    num = 1
-    clearInterval(timeoutId)
-    tit.innerHTML === 'Calculator'
-} else {
-    timeoutId = setInterval(function() {
-        if (tit.innerHTML === 'Calculator') {
-            tit.innerHTML = `(${num}) New messages`
-        } else {
-            tit.innerHTML = `Calculator`
-        }
-    }, 1000)
+// if (num <= 0) {
+//     num = 1
+//     clearInterval(timeoutId)
+//     tit.innerHTML === 'Calculator'
+// } else {
+//     timeoutId = setInterval(function() {
+//         if (tit.innerHTML === 'Calculator') {
+//             tit.innerHTML = `(${num}) New messages`
+//         } else {
+//             tit.innerHTML = `Calculator`
+//         }
+//     }, 1000)
+// }
+
+const addNum = (array, num) => {
+    console.log(array.map((value) => value + num))
 }
+
+addNum([1, 2, 3], 2)
+addNum([-2, -1, 0, 99], 2)
