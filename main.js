@@ -1125,10 +1125,16 @@
 
 const butChange = document.querySelector('.but')
 const show = document.querySelector('.show')
+let timeoutId;
 
 butChange.addEventListener('click', function() {
+
+
     show.innerHTML = `Added`
-    setTimeout(function() {
+    clearTimeout(timeoutId)
+
+
+    timeoutId = setTimeout(function() {
         show.innerHTML = ``
     }, 2000)
 })
