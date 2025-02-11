@@ -1126,6 +1126,7 @@
 const butChange = document.querySelector('.but')
 
 butChange.addEventListener('click', function() {
+    butChange.innerHTML = `Loading...`
     setTimeout(function() {
         butChange.innerHTML = `Finished!`
     }, 1000)
