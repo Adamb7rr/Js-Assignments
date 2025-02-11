@@ -1140,12 +1140,30 @@
 // })
 
 const tit = document.querySelector('title')
+const add = document.querySelector('.add')
+const remove = document.querySelector('.remove')
 
-setInterval(function() {
-    if (tit.innerHTML === 'Calculator') {
-        tit.innerHTML = `(2) New messages`
-    } else {
-        tit.innerHTML = `Calculator`
-    }
+let num = 1
+let timeoutId;
+add.addEventListener('click', function() {
+    num++
+})
+remove.addEventListener('click', function() {
+    num--
+})
 
-}, 1000)
+
+
+if (num <= 0) {
+    num = 1
+    clearInterval(timeoutId)
+    tit.innerHTML === 'Calculator'
+} else {
+    timeoutId = setInterval(function() {
+        if (tit.innerHTML === 'Calculator') {
+            tit.innerHTML = `(${num}) New messages`
+        } else {
+            tit.innerHTML = `Calculator`
+        }
+    }, 1000)
+}
