@@ -1111,14 +1111,22 @@
 //     console.log(i + ':' + value)
 // })
 
-let add = function() {
-    console.log(2 + 3)
-}
+// let add = function() {
+//     console.log(2 + 3)
+// }
 
-function runTwice (arg) {
-    arg()
-    arg()
-}
+// function runTwice (arg) {
+//     arg()
+//     arg()
+// }
 
-runTwice(function() {console.log('12b')})
-runTwice(add)
+// runTwice(function() {console.log('12b')})
+// runTwice(add)
+
+const butChange = document.querySelector('.but')
+
+butChange.addEventListener('click', function() {
+    setTimeout(function() {
+        butChange.innerHTML = `Finished!`
+    }, 1000)
+})
