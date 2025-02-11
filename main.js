@@ -1111,3 +1111,14 @@
 //     console.log(i + ':' + value)
 // })
 
+let add = function() {
+    console.log(2 + 3)
+}
+
+function runTwice (arg) {
+    arg()
+    arg()
+}
+
+runTwice(function() {console.log('12b')})
+runTwice(add)
