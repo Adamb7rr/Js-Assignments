@@ -1124,10 +1124,11 @@
 // runTwice(add)
 
 const butChange = document.querySelector('.but')
+const show = document.querySelector('.show')
 
 butChange.addEventListener('click', function() {
-    butChange.innerHTML = `Loading...`
+    show.innerHTML = `Added`
     setTimeout(function() {
-        butChange.innerHTML = `Finished!`
-    }, 1000)
+        show.innerHTML = ``
+    }, 2000)
 })
