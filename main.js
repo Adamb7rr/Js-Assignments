@@ -1123,18 +1123,29 @@
 // runTwice(function() {console.log('12b')})
 // runTwice(add)
 
-const butChange = document.querySelector('.but')
-const show = document.querySelector('.show')
-let timeoutId;
+// const butChange = document.querySelector('.but')
+// const show = document.querySelector('.show')
+// let timeoutId;
 
-butChange.addEventListener('click', function() {
-
-
-    show.innerHTML = `Added`
-    clearTimeout(timeoutId)
+// butChange.addEventListener('click', function() {
 
 
-    timeoutId = setTimeout(function() {
-        show.innerHTML = ``
-    }, 2000)
-})
+//     show.innerHTML = `Added`
+//     clearTimeout(timeoutId)
+
+
+//     timeoutId = setTimeout(function() {
+//         show.innerHTML = ``
+//     }, 2000)
+// })
+
+const tit = document.querySelector('title')
+
+setInterval(function() {
+    if (tit.innerHTML === 'Calculator') {
+        tit.innerHTML = `(2) New messages`
+    } else {
+        tit.innerHTML = `Calculator`
+    }
+
+}, 1000)
