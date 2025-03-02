@@ -6,35 +6,6 @@ body {
     align-items: center;
     background-color: #15616d;
 }
-.main {
-    font-size: 6rem;
-    color: #588157;
-    border-bottom: 10px solid #15616d;
-    border-radius: 40%;
-}
-/* div {
-    background-color: lightblue;
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 50px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease;
-    border-bottom: 5px solid #588157;
-    
-} */
-br {
-    width: 100%;
-    margin: 20px;
-    height: 10px;
-    background-color: #588157;
-}
-
-.custom {
-    background-color: #333;
-    color: #fff;
-}
 .custom2 {
     background-color: #588157;
     border-radius: 10px;
